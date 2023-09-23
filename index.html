@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/styles.css" />
+    <script src="js/main.js" defer></script>
+  </head>
+  <body class="flex flex-direction-column flex-center">
+    <section class="main flex flex-center">
+      <div class="main-container flex flex-align-center flex-direction-column">
+        <div class="display-container flex flex-direction-column">
+          <div class="prev-operations flex">
+            <div class="calculated-result"></div>
+            <div class="selected-operator"></div>
+          </div>
+          <div class="current-operation flex flex-items"></div>
+        </div>
+        <div class="all-buttons flex flex-wrap">
+          <button class="btn" type="control-operator" value="clear">AC</button>
+          <button class="btn" type="control-operator" value="delete">C</button>
+          <button class="btn" type="math-operator" value="%">%</button>
+          <button class="btn" type="math-operator" value="÷">÷</button>
+          <button class="btn" type="digit" value="7">7</button>
+          <button class="btn" type="digit" value="8">8</button>
+          <button class="btn" type="digit" value="9">9</button>
+          <button class="btn" type="math-operator" value="x">x</button>
+          <button class="btn" type="digit" value="4">4</button>
+          <button class="btn" type="digit" value="5">5</button>
+          <button class="btn" type="digit" value="6">6</button>
+          <button class="btn" type="math-operator" value="-">-</button>
+          <button class="btn" type="digit" value="1">1</button>
+          <button class="btn" type="digit" value="2">2</button>
+          <button class="btn" type="digit" value="3">3</button>
+          <button class="btn" type="math-operator" value="+">+</button>
+          <button class="btn" type="digit" value="0">0</button>
+          <button class="btn" type="digit" value=".">.</button>
+          <button
+            class="btn rectangular-btn flex-items"
+            type="control-operator"
+            value="equals"
+          >
+            =
+          </button>
+        </div>
+      </div>
+    </section>
+    <footer class="flex-center flex">Copyrights Lypophrenia</footer>
+  </body>
+</html>

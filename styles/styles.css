@@ -1,0 +1,104 @@
+:root {
+  --background-main-color: #212121;
+  --background-secondary-color: #3b3b3b;
+  --background-button-light-color: #616161;
+  --button-text-color: #1d1d1d;
+  --text-light: #01a029;
+  --white-color: #ffffff;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  min-height: 100vh;
+  min-width: 100vh;
+}
+.flex {
+  display: flex;
+}
+
+.flex-direction-column {
+  flex-direction: column;
+}
+
+.flex-center {
+  justify-content: center;
+}
+
+.flex-align-center {
+  align-items: center;
+}
+
+.flex-items {
+  flex: auto;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.main-container {
+  width: 350px;
+  height: 550px;
+  background-color: var(--background-main-color);
+  border-radius: 5%;
+  padding: 20px;
+}
+
+.display-container {
+  width: 310px;
+  height: 100px;
+  background-color: var(--background-secondary-color);
+  border-radius: 5%;
+  margin-bottom: 20px;
+}
+
+.current-operation {
+  justify-content: flex-end;
+  align-items: flex-end;
+  margin: 10px 20px;
+  color: var(--white-color);
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.prev-operations {
+  justify-content: flex-end;
+  align-items: flex-end;
+  margin: 10px 20px;
+  color: #01a029;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.all-buttons,
+.prev-operations {
+  gap: 10px;
+}
+
+.all-buttons .btn {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background-color: #3b3b3b;
+  color: var(--white-color);
+  font-size: 24px;
+  cursor: pointer;
+  font-weight: bold;
+  outline: none;
+  border: 0px solid transparent;
+}
+
+.btn.rectangular-btn {
+  border-radius: 50px;
+}
+
+.btn:hover {
+  color: var(--button-text-color);
+  background-color: var(--background-button-light-color);
+  transition: 0.3s;
+  box-shadow: 0px 0px 1px 2px var(--background-button-light-color);
+}
