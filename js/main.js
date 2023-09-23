@@ -1,7 +1,7 @@
 function main() {
   let prevNumber = "",
     nextNumber = "",
-    operator = " ",
+    operator = "",
     displayValue = "";
 
   const currentDisplaySelector = document.querySelector(".current-operation");
@@ -75,6 +75,7 @@ function main() {
     switch (operator) {
       case "÷":
         if (+nextNumber === 0) {
+          clearAll();
           return "ERROR...";
         }
         return division(prevNumber, nextNumber);
